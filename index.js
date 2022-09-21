@@ -108,6 +108,7 @@ function execCmd(args){
         console.log("\tlhere +  [name] [path or cmd]    => Create a command with the specified name and path/cmd");
         console.log("\tlhere ++ [name] [path or cmd]    => Create or replace a command");
         console.log("\tlhere - [name]   => Remove the specified command");
+        console.log("\tlhere ..         => List all stored commands");
 
         console.log("\r\nExamples:");
         console.log("\tlhere + script ./script.js");
@@ -233,7 +234,16 @@ function execCmd(args){
     }
 }
 
-if(process.argv[0] == 'lhere')
-    execCmd([...process.argv]);
+let argv = [...process.argv];
+
+if(argv.length >= 2){
+    if(argv[1].includes("lhere") && argv[1].endsWith("bin.js")){
+        argv.splice(0,1);
+        argv[0] = 'lhere';
+    }
+}
+
+if(argv[0] == 'lhere')
+    execCmd(argv);
 
 module.exports = execCmd;
