@@ -1,11 +1,11 @@
 {
   "name": "lhere",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A global node tool for launching global script and commands where you want",
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
-    "postinstall": "npm i lhere -g"
+    "postinstall": "echo npm i lhere -g"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/Geckos-Ink/node-lhere#readme",
   "bin": {
-    "modules-sync": "./bin.js"
+    "lhere": "./bin.js"
   }
 }

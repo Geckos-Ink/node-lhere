@@ -4,7 +4,7 @@
 
 **lhere** stands for "*launch here*", so you can launch your scripts anywhere in the terminal. 
 
-*Version: 0.1.0*
+*Version: 0.1.1*
 
 ## Install
 
