@@ -1,10 +1,11 @@
 {
   "name": "lhere",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A global node tool for launching scripts where you want",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "postinstall": "npm i lhere -g"
   },
   "repository": {
     "type": "git",
@@ -13,12 +14,16 @@
   "keywords": [
     "global",
     "launch",
-    "scripts"
+    "scripts",
+    "terminal"
   ],
   "author": "cekkr@GitHub",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Geckos-Ink/node-lhere/issues"
   },
-  "homepage": "https://github.com/Geckos-Ink/node-lhere#readme"
+  "homepage": "https://github.com/Geckos-Ink/node-lhere#readme",
+  "bin": {
+    "modules-sync": "./bin.js"
+  }
 }
