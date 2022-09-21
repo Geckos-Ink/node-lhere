@@ -1,7 +1,7 @@
 {
   "name": "lhere",
   "version": "0.1.0",
-  "description": "A global node tool for launching scripts where you want",
+  "description": "A global node tool for launching global script and commands where you want",
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
