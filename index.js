@@ -105,13 +105,13 @@ function execCmd(args){
         console.log("\r\nCommands:");
         console.log("\tlhere [name]     => Execute command with specified name");
         console.log("\tlhere /[name]    => Execute command from the working directory where it was created")
-        console.log("\tlhere + [name] [path or cmd]     => Create a command with the specified name and path/cmd");
+        console.log("\tlhere +  [name] [path or cmd]    => Create a command with the specified name and path/cmd");
         console.log("\tlhere ++ [name] [path or cmd]    => Create or replace a command");
         console.log("\tlhere - [name]   => Remove the specified command");
 
         console.log("\r\nExamples:");
         console.log("\tlhere + script ./script.js");
-        console.log("\tlhere ++ hello \"echo hello\"")
+        console.log("\tlhere + hello \"echo hello\"")
         console.log("\tlhere hello")
 
     }
