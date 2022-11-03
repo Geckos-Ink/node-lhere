@@ -237,13 +237,14 @@ function execCmd(args){
 let argv = [...process.argv];
 
 if(argv.length >= 2){
-    if(argv[1].includes("lhere") && argv[1].endsWith("bin.js")){
+    if(argv[1].includes("lhere")){
         argv.splice(0,1);
         argv[0] = 'lhere';
     }
 }
 
-if(argv[0] == 'lhere')
+if(argv[0].endsWith('lhere'))
     execCmd(argv);
+
 
 module.exports = execCmd;

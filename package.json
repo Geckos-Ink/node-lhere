@@ -4,8 +4,7 @@
   "description": "A global node tool for launching global script and commands where you want",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js",
-    "postinstall": "echo npm i lhere -g"
+    "test": "node test.js"   
   },
   "repository": {
     "type": "git",

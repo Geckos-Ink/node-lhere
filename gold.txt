@@ -1,0 +1,2 @@
+Removed from package.json scripts:
+ "postinstall": "echo npm i lhere -g"
